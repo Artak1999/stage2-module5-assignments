@@ -21,7 +21,7 @@ public class LocalProcessor {
     private List<String> stringArrayList = new ArrayList<>(0);
 
     public LocalProcessor(String processorName, Long period, String processorVersion, Integer valueOfCheap,
-                          Scanner informationScanner, LinkedList<String> stringArrayList) {
+                          Scanner informationScanner, List<String> stringArrayList) {
         this.processorName = processorName;
         this.period = period;
         this.processorVersion.append(processorVersion != null ? processorVersion : "");
@@ -34,7 +34,7 @@ public class LocalProcessor {
     }
 
     @ListIteratorAnnotation
-    public void listIterator(LinkedList<String> stringList) {
+    public void listIterator(List<String> stringList) {
         for (String string : stringList)
             Optional.ofNullable(string).map(String::hashCode).ifPresent(System.out::println);
     }
