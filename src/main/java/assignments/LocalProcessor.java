@@ -18,7 +18,7 @@ public class LocalProcessor {
     private StringBuilder processorVersion = new StringBuilder();
     private Integer valueOfCheap = 0;
     private Scanner informationScanner;
-    private static List<String> stringArrayList = new ArrayList<>(0);
+    private List<String> stringArrayList = new ArrayList<>(0);
 
     public LocalProcessor(String processorName, Long period, String processorVersion, Integer valueOfCheap,
                           Scanner informationScanner, LinkedList<String> stringArrayList) {
